@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="device"
+            type="dev.rohitverma882.miunlock.data.FastbootDevice" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="dev.rohitverma882.miunlock.ui.devicedetails.DeviceDetailsFragment">
+        <TextView
+            android:id="@+id/tv_device_id"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="center_vertical"
+            android:padding="16dp"
+            android:text='@{"Device Id: " + device.deviceId}' />
+
+        <TextView
+            android:id="@+id/tv_serial_no"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:padding="16dp"
+            android:text='@{"Serial Number: " + device.serialNumber}' />
+
+        <TextView
+            android:id="@+id/tv_current_slot"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:padding="16dp"
+            android:text='@{"Current Slot: " + device.currentSlot}' />
+
+        <TextView
+            android:id="@+id/tv_product"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:padding="16dp"
+            android:text='@{"Product: " + device.product}' />
+
+        <TextView
+            android:id="@+id/tv_token"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:padding="16dp"
+            android:text='@{"Token: " + device.token}' />
+    </LinearLayout>
+
+</layout>

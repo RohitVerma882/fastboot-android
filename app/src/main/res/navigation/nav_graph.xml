@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/mainFragment">
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="dev.rohitverma882.miunlock.ui.main.MainFragment"
+        android:label="@string/fragment_main_label"
+        tools:layout="@layout/fragment_main">
+        <action
+            android:id="@+id/connectAction"
+            app:destination="@id/deviceDetailsFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/deviceDetailsFragment"
+        android:name="dev.rohitverma882.miunlock.ui.devicedetails.DeviceDetailsFragment"
+        android:label="@string/fragment_device_details_label"
+        tools:layout="@layout/fragment_device_details">
+        <argument
+            android:name="deviceId"
+            app:argType="string"
+            app:nullable="false" />
+    </fragment>
+</navigation>

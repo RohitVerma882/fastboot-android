@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-feature android:name="android.hardware.usb.host" />
+
+    <application>
+        <provider
+            android:name=".FastbootInitProvider"
+            android:authorities=".fastbootInitProvider"
+            android:exported="false" />
+    </application>
+</manifest>

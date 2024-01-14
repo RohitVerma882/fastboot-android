@@ -11,28 +11,33 @@ data class FastbootDevice(
     val currentSlot: String,
     val product: String,
     val token: String,
+    val info: String,
 ) {
     companion object {
-        fun fromDeviceId(deviceId: DeviceId) = FastbootDevice(deviceId, "", "", "", "")
+        fun fromDeviceId(deviceId: DeviceId) = FastbootDevice(deviceId, "", "", "", "", "")
 
         fun fromFastbootDeviceContext(
             deviceId: DeviceId,
             deviceContext: FastbootDeviceContext,
-        ): FastbootDevice =
-            FastbootDevice(
-                deviceId,
-                deviceContext.sendCommand(FastbootCommand.getVar("serialno")).data,
-                deviceContext.sendCommand(FastbootCommand.getVar("current-slot")).data,
-                deviceContext.sendCommand(FastbootCommand.getVar("product")).data,
-                getToken(deviceContext),
-            )
+        ): FastbootDevice = FastbootDevice(
+            deviceId,
+            deviceContext.sendCommand(FastbootCommand.getVar("serialno")).data,
+            deviceContext.sendCommand(FastbootCommand.getVar("current-slot")).data,
+            deviceContext.sendCommand(FastbootCommand.getVar("product")).data,
+            getToken(deviceContext),
+            deviceContext.sendCommand(FastbootCommand.oem("device-info")).info.joinToString(", ")
+        )
 
         private fun getToken(deviceContext: FastbootDeviceContext): String {
             var response = deviceContext.sendCommand(FastbootCommand.getVar("token"))
-            if (response.status == FastbootResponse.ResponseStatus.FAIL || response.status == FastbootResponse.ResponseStatus.UNKNOWN) {
-                response = deviceContext.sendCommand(FastbootCommand.oem("get_token"))
+            if (response.status == FastbootResponse.ResponseStatus.OKAY) return response.data
+
+            response = deviceContext.sendCommand(FastbootCommand.oem("get_token"))
+            val token = StringBuilder()
+            response.info.forEach {
+                token.append(it.replace("token:", "").trim())
             }
-            return response.data.replace("\n", "")
+            return token.toString()
         }
     }
 }

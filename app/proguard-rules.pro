@@ -1,3 +1,3 @@
 -keepattributes SourceFile,LineNumberTable
 -renamesourcefileattribute SourceFile
--repackageclasses dev.rohitverma882.miunlock
+-repackageclasses dev.rohitverma882.fastboot.sample

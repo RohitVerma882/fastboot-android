@@ -1,4 +1,4 @@
-package dev.rohitverma882.miunlock
+package dev.rohitverma882.fastboot.sample
 
 import android.os.Bundle
 
@@ -9,7 +9,7 @@ import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
 
-import dev.rohitverma882.miunlock.databinding.ActivityMainBinding
+import dev.rohitverma882.fastboot.sample.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
     private lateinit var appBarConfiguration: AppBarConfiguration

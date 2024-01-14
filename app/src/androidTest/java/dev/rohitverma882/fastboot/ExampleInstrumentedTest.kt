@@ -1,4 +1,4 @@
-package dev.rohitverma882.miunlock
+package dev.rohitverma882.fastboot
 
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.platform.app.InstrumentationRegistry

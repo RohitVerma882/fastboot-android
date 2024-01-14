@@ -6,11 +6,11 @@
 
         <variable
             name="device"
-            type="dev.rohitverma882.miunlock.data.FastbootDevice" />
+            type="dev.rohitverma882.fastboot.sample.data.FastbootDevice" />
 
         <variable
             name="onClickListener"
-            type="dev.rohitverma882.miunlock.ui.OnFastbootDeviceItemClickListener" />
+            type="dev.rohitverma882.fastboot.sample.ui.OnFastbootDeviceItemClickListener" />
     </data>
 
     <LinearLayout

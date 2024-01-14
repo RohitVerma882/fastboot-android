@@ -5,7 +5,7 @@
     app:startDestination="@id/mainFragment">
     <fragment
         android:id="@+id/mainFragment"
-        android:name="dev.rohitverma882.miunlock.ui.main.MainFragment"
+        android:name="dev.rohitverma882.fastboot.sample.ui.main.MainFragment"
         android:label="@string/fragment_main_label"
         tools:layout="@layout/fragment_main">
         <action
@@ -19,7 +19,7 @@
 
     <fragment
         android:id="@+id/deviceDetailsFragment"
-        android:name="dev.rohitverma882.miunlock.ui.devicedetails.DeviceDetailsFragment"
+        android:name="dev.rohitverma882.fastboot.sample.ui.devicedetails.DeviceDetailsFragment"
         android:label="@string/fragment_device_details_label"
         tools:layout="@layout/fragment_device_details">
         <argument

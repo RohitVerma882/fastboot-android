@@ -1,4 +1,4 @@
-package dev.rohitverma882.miunlock.data
+package dev.rohitverma882.fastboot.sample.data
 
 import android.view.LayoutInflater
 import android.view.View
@@ -8,8 +8,8 @@ import androidx.paging.PagedListAdapter
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 
-import dev.rohitverma882.miunlock.databinding.ItemFastbootDeviceBinding
-import dev.rohitverma882.miunlock.ui.OnFastbootDeviceItemClickListener
+import dev.rohitverma882.fastboot.databinding.ItemFastbootDeviceBinding
+import dev.rohitverma882.fastboot.sample.ui.OnFastbootDeviceItemClickListener
 
 class FastbootDeviceAdapter : OnFastbootDeviceItemClickListener,
     PagedListAdapter<FastbootDevice, FastbootDeviceAdapter.ViewHolder>(FASTBOOT_DEVICE_COMPARATOR) {

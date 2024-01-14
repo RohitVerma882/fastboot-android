@@ -1,4 +1,4 @@
-package dev.rohitverma882.miunlock.data
+package dev.rohitverma882.fastboot.sample.data
 
 import dev.rohitverma882.fastboot.DeviceId
 import dev.rohitverma882.fastboot.FastbootCommand

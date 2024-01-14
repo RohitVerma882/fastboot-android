@@ -1,4 +1,4 @@
-package dev.rohitverma882.miunlock.ui.devicedetails
+package dev.rohitverma882.fastboot.sample.ui.devicedetails
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
@@ -8,7 +8,7 @@ import dev.rohitverma882.fastboot.DeviceId
 import dev.rohitverma882.fastboot.FastbootDeviceContext
 import dev.rohitverma882.fastboot.FastbootDeviceManager
 import dev.rohitverma882.fastboot.FastbootDeviceManagerListener
-import dev.rohitverma882.miunlock.data.FastbootDevice
+import dev.rohitverma882.fastboot.sample.data.FastbootDevice
 
 class DeviceDetailsViewModel : ViewModel(), FastbootDeviceManagerListener {
     private var _fastbootDevice = MutableLiveData<FastbootDevice?>()

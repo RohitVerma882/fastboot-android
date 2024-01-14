@@ -1,4 +1,4 @@
-package dev.rohitverma882.miunlock
+package dev.rohitverma882.fastboot
 
 import org.junit.Assert.assertEquals
 import org.junit.Test

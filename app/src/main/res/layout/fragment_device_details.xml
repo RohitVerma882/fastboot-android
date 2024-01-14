@@ -6,14 +6,14 @@
 
         <variable
             name="device"
-            type="dev.rohitverma882.miunlock.data.FastbootDevice" />
+            type="dev.rohitverma882.fastboot.sample.data.FastbootDevice" />
     </data>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        tools:context="dev.rohitverma882.miunlock.ui.devicedetails.DeviceDetailsFragment">
+        tools:context=".ui.devicedetails.DeviceDetailsFragment">
 
         <TextView
             android:id="@+id/tv_device_id"

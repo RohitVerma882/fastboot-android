@@ -1,4 +1,4 @@
-package dev.rohitverma882.miunlock.ui.main
+package dev.rohitverma882.fastboot.sample.ui.main
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -10,10 +10,10 @@ import androidx.fragment.app.viewModels
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 
-import dev.rohitverma882.miunlock.data.FastbootDevice
-import dev.rohitverma882.miunlock.data.FastbootDeviceAdapter
-import dev.rohitverma882.miunlock.databinding.FragmentMainBinding
-import dev.rohitverma882.miunlock.ui.OnFastbootDeviceItemClickListener
+import dev.rohitverma882.fastboot.sample.data.FastbootDevice
+import dev.rohitverma882.fastboot.sample.data.FastbootDeviceAdapter
+import dev.rohitverma882.fastboot.databinding.FragmentMainBinding
+import dev.rohitverma882.fastboot.sample.ui.OnFastbootDeviceItemClickListener
 
 class MainFragment : Fragment(), OnFastbootDeviceItemClickListener {
     private var _binding: FragmentMainBinding? = null

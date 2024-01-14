@@ -17,5 +17,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "MiUnlock"
+rootProject.name = "Fastboot Java"
 include(":app", ":fastboot")

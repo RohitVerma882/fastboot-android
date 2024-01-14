@@ -6,11 +6,11 @@ plugins {
 }
 
 android {
-    namespace = "dev.rohitverma882.miunlock"
+    namespace = "dev.rohitverma882.fastboot.sample"
     compileSdk = project.properties["compileSdk"].toString().toInt()
 
     defaultConfig {
-        applicationId = "dev.rohitverma882.miunlock"
+        applicationId = "dev.rohitverma882.fastboot.sample"
         minSdk = project.properties["minSdk"].toString().toInt()
         targetSdk = 34
         versionCode = 1

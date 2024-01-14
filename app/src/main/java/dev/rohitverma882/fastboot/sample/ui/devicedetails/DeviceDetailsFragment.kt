@@ -1,4 +1,4 @@
-package dev.rohitverma882.miunlock.ui.devicedetails
+package dev.rohitverma882.fastboot.sample.ui.devicedetails
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -9,7 +9,7 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.navArgs
 
-import dev.rohitverma882.miunlock.databinding.FragmentDeviceDetailsBinding
+import dev.rohitverma882.fastboot.databinding.FragmentDeviceDetailsBinding
 
 class DeviceDetailsFragment : Fragment() {
     private var _binding: FragmentDeviceDetailsBinding? = null

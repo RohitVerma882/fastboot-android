@@ -1,4 +1,4 @@
-package dev.rohitverma882.miunlock.data
+package dev.rohitverma882.fastboot.sample.data
 
 import androidx.paging.DataSource
 import androidx.paging.PositionalDataSource
@@ -7,7 +7,7 @@ import dev.rohitverma882.fastboot.DeviceId
 import dev.rohitverma882.fastboot.FastbootDeviceContext
 import dev.rohitverma882.fastboot.FastbootDeviceManager
 import dev.rohitverma882.fastboot.FastbootDeviceManagerListener
-import dev.rohitverma882.miunlock.data.FastbootDevice.Companion.fromDeviceId
+import dev.rohitverma882.fastboot.sample.data.FastbootDevice.Companion.fromDeviceId
 
 class FastbootDeviceDataSource : PositionalDataSource<FastbootDevice>(),
     FastbootDeviceManagerListener {

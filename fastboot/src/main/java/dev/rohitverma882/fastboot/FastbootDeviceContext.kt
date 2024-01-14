@@ -32,6 +32,18 @@ class FastbootDeviceContext internal constructor(private val transport: Transpor
         return handleResponse(timeout)
     }
 
+    fun sendData(
+        buffer: ByteArray, timeout: Int = DEFAULT_TIMEOUT,
+        force: Boolean = true,
+    ): FastbootResponse {
+        if (!transport.isConnected) {
+            transport.connect(force)
+        }
+
+        transport.send(buffer, timeout)
+        return handleResponse(timeout)
+    }
+
     private fun handleResponse(timeout: Int): FastbootResponse {
         val info = ArrayList<String>()
         while (true) {

@@ -9,7 +9,7 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.navArgs
 
-import dev.rohitverma882.fastboot.databinding.FragmentDeviceDetailsBinding
+import dev.rohitverma882.fastboot.sample.databinding.FragmentDeviceDetailsBinding
 
 class DeviceDetailsFragment : Fragment() {
     private var _binding: FragmentDeviceDetailsBinding? = null

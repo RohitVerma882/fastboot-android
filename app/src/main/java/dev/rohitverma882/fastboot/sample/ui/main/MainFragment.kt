@@ -12,7 +12,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 
 import dev.rohitverma882.fastboot.sample.data.FastbootDevice
 import dev.rohitverma882.fastboot.sample.data.FastbootDeviceAdapter
-import dev.rohitverma882.fastboot.databinding.FragmentMainBinding
+import dev.rohitverma882.fastboot.sample.databinding.FragmentMainBinding
 import dev.rohitverma882.fastboot.sample.ui.OnFastbootDeviceItemClickListener
 
 class MainFragment : Fragment(), OnFastbootDeviceItemClickListener {

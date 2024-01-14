@@ -8,7 +8,7 @@ import androidx.paging.PagedListAdapter
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 
-import dev.rohitverma882.fastboot.databinding.ItemFastbootDeviceBinding
+import dev.rohitverma882.fastboot.sample.databinding.ItemFastbootDeviceBinding
 import dev.rohitverma882.fastboot.sample.ui.OnFastbootDeviceItemClickListener
 
 class FastbootDeviceAdapter : OnFastbootDeviceItemClickListener,

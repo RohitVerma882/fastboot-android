@@ -1,4 +1,4 @@
-# Fastboot Java
+# Fastboot Android
 
 Android library for sending fastboot commands from an Android device to a device running fastboot.
 

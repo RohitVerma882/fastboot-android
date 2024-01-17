@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name" translatable="false">Fastboot Java</string>
+    <string name="app_name" translatable="false">Fastboot Android</string>
 
     <string name="fragment_main_label">Devices</string>
     <string name="fragment_device_details_label">Details</string>

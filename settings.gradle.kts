@@ -17,5 +17,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Fastboot Java"
+rootProject.name = "Fastboot Android"
 include(":app", ":fastboot")

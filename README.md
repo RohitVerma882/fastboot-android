@@ -4,6 +4,7 @@ Android library for sending fastboot commands from an Android device to a device
 
 ***Only supports fastboot over USB On-The-Go (OTG) connections.***
 
+Original-Source: https://github.com/google/fastboot-mobile
 
 ## Usage
 ### List Attached Fastboot Devices

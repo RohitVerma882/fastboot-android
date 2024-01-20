@@ -42,3 +42,17 @@ dependencies {
     androidTestImplementation(libs.androidx.test.ext.junit)
     androidTestImplementation(libs.espresso.core)
 }
+
+publishing {
+    publications {
+        register<MavenPublication>("release") {
+            groupId = "com.github.RohitVerma882"
+            artifactId = "fastboot-android"
+            version = "1.0"
+
+            afterEvaluate {
+                from(components.getByName("release"))
+            }
+        }
+    }
+}

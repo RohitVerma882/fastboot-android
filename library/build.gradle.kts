@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.library)
     alias(libs.plugins.kotlin)
+    id("maven-publish")
 }
 
 android {
@@ -15,7 +16,7 @@ android {
     }
 
     buildTypes {
-        release {
+        getByName("release") {
             isMinifyEnabled = false
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
@@ -36,7 +37,6 @@ android {
 
 dependencies {
     implementation(libs.core.ktx)
-    implementation(libs.appcompat)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.test.ext.junit)

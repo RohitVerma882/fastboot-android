@@ -25,9 +25,8 @@ android {
     }
 
     buildTypes {
-        release {
+        getByName("release") {
             isMinifyEnabled = false
-            isShrinkResources = false
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
@@ -55,7 +54,7 @@ android {
 }
 
 dependencies {
-    implementation(project(":fastboot"))
+    implementation(project(":library"))
 
     implementation(libs.core.ktx)
     implementation(libs.activity.ktx)

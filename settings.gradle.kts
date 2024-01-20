@@ -13,9 +13,8 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
-        maven { url = uri("https://jitpack.io") }
     }
 }
 
-rootProject.name = "Fastboot Android"
-include(":app", ":fastboot")
+rootProject.name = "fastboot-android"
+include(":sample", ":library")

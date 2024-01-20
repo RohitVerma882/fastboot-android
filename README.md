@@ -1,10 +1,30 @@
 # Fastboot Android
+[![](https://jitpack.io/v/RohitVerma882/fastboot-android.svg)](https://jitpack.io/#RohitVerma882/fastboot-android)
 
 Android library for sending fastboot commands from an Android device to a device running fastboot.
 
 ***Only supports fastboot over USB On-The-Go (OTG) connections.***
 
 Original-Source: https://github.com/google/fastboot-mobile
+
+## Integration
+Add it in your root build.gradle at the end of repositories:
+```gradle
+dependencyResolutionManagement {
+	repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+	repositories {
+		mavenCentral()
+		maven { url 'https://jitpack.io' }
+	}
+}
+```
+
+Add the dependency
+```gradle
+dependencies {
+    implementation 'com.github.RohitVerma882:fastboot-android:<version>'
+}
+```
 
 ## Usage
 ### List Attached Fastboot Devices

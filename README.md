@@ -1,4 +1,5 @@
 # Fastboot Android
+
 [![](https://jitpack.io/v/RohitVerma882/fastboot-android.svg)](https://jitpack.io/#RohitVerma882/fastboot-android)
 
 Android library for sending fastboot commands from an Android device to a device running fastboot.
@@ -8,18 +9,21 @@ Android library for sending fastboot commands from an Android device to a device
 Original-Source: https://github.com/google/fastboot-mobile
 
 ## Integration
+
 Add it in your root build.gradle at the end of repositories:
+
 ```gradle
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
         mavenCentral()
-		maven { url 'https://jitpack.io' }
-	}
+        maven { url 'https://jitpack.io' }
+    }
 }
 ```
 
 Add the dependency
+
 ```gradle
 dependencies {
     implementation 'com.github.RohitVerma882:fastboot-android:<version>'
@@ -27,18 +31,22 @@ dependencies {
 ```
 
 ## Usage
+
 List Attached Fastboot Devices
+
 ```kotlin
 // Includes connected devices.
-val deviceIds : List<DeviceId> = FastbootDeviceManager.getAttachedDeviceIds()
+val deviceIds: List<DeviceId> = FastbootDeviceManager.getAttachedDeviceIds()
 ```
 
 List Connected Fastboot Devices
+
 ```kotlin
-val deviceIds : List<DeviceId> = FastbootDeviceManager.getConnectedDeviceIds()
+val deviceIds: List<DeviceId> = FastbootDeviceManager.getConnectedDeviceIds()
 ```
 
 Connect to a Fastboot Device
+
 ```kotlin
 // typealias DeviceId = String
 FastbootDeviceManager.addFastbootDeviceManagerListener(
@@ -51,7 +59,10 @@ FastbootDeviceManager.addFastbootDeviceManagerListener(
             Log.d("Device detached: $deviceId")
         }
 
-        override fun onFastbootDeviceConnected(deviceId: DeviceId, deviceContext: FastbootDeviceContext) {
+        override fun onFastbootDeviceConnected(
+            deviceId: DeviceId,
+            deviceContext: FastbootDeviceContext
+        ) {
             // Do some fastboot stuff...
             val response = deviceContext.sendCommand(FastbootCommand.getVar("current-slot"))
             val bootSlot = response.data

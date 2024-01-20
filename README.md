@@ -11,9 +11,9 @@ Original-Source: https://github.com/google/fastboot-mobile
 Add it in your root build.gradle at the end of repositories:
 ```gradle
 dependencyResolutionManagement {
-	repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
-	repositories {
-		mavenCentral()
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        mavenCentral()
 		maven { url 'https://jitpack.io' }
 	}
 }
@@ -27,18 +27,18 @@ dependencies {
 ```
 
 ## Usage
-### List Attached Fastboot Devices
+List Attached Fastboot Devices
 ```kotlin
 // Includes connected devices.
 val deviceIds : List<DeviceId> = FastbootDeviceManager.getAttachedDeviceIds()
 ```
 
-### List Connected Fastboot Devices
+List Connected Fastboot Devices
 ```kotlin
 val deviceIds : List<DeviceId> = FastbootDeviceManager.getConnectedDeviceIds()
 ```
 
-### Connect to a Fastboot Device
+Connect to a Fastboot Device
 ```kotlin
 // typealias DeviceId = String
 FastbootDeviceManager.addFastbootDeviceManagerListener(

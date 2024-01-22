@@ -1,5 +1,5 @@
 <resources>
-    <style name="Base.Theme.FastbootJava" parent="Theme.Material3.DayNight.NoActionBar">
+    <style name="Base.Theme.Fastboot" parent="Theme.Material3.DayNight.NoActionBar">
 
     </style>
 </resources>
